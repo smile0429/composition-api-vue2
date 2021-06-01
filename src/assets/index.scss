@@ -1,0 +1,56 @@
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+/**
+ * 移除body默认margin值.
+ * 统一终端(windows,mac,linux)中文/英文字体.
+ */
+body {
+  margin: 0;
+  /**  
+	* 中文("PingFang SC","Microsoft YaHei","Hiragino Sans GB","微软雅黑")
+	* 英文字体("Helvetica Neue",Helvetica,Arial) 
+	*/
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  font-size: 16px;
+}
+
+/**
+ * 去除列表边距及符号.
+ */
+ul,
+ol,
+dl,
+li,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/**
+ * 去除h*标签的边距及加粗.
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+// 清除浮动  添加`class="clearfix"`
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  clear: both;
+}
